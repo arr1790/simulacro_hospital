@@ -6,6 +6,7 @@ import prisma from "@/lib/prisma"
 
 async function obtenerPlantas() {
     const plantas = await prisma.planta.findMany()
+    console.log("🌿 Plantas obtenidas:", plantas);
     return plantas
 }
 
