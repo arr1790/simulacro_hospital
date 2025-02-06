@@ -1,5 +1,6 @@
 import Medicina   from "@/components/medicinas/Item";
 import { Suspense } from "react";
+import BotonAtras from "@/components/botonAtras";
 
 async function PaginaMedicina({ params, searchParams }) {
     const { id } = await params
@@ -12,6 +13,7 @@ async function PaginaMedicina({ params, searchParams }) {
                 </p>
             }>
                 <Medicina id={id} />
+                <BotonAtras />
                 
              
             </Suspense>

@@ -1,3 +1,4 @@
+import BotonAtras from "@/components/botonAtras";
 import Medicinas from "@/components/Medicinas/Lista";
 import { Suspense } from "react";
 export default function MedicinasPage() {
@@ -6,6 +7,7 @@ export default function MedicinasPage() {
             
             <Suspense fallback={"Obteniendo medicinas ..."}>
                 <Medicinas />
+                <BotonAtras />
             </Suspense>
         </div>
     );

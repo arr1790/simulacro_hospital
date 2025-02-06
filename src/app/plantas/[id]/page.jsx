@@ -1,5 +1,6 @@
 import Planta   from "@/components/plantas/Item";
 import { Suspense } from "react";
+import BotonAtras from "@/components/botonAtras";
 
 async function PaginaGrupo({ params, searchParams }) {
     const { id } = await params
@@ -12,6 +13,7 @@ async function PaginaGrupo({ params, searchParams }) {
                 </p>
             }>
                 <Planta id={id} />
+                <BotonAtras />
                 
                
             </Suspense>
